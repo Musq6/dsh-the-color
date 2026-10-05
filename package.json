@@ -1,0 +1,34 @@
+{
+  "name": "dsh-the-color",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "在设置中新增“主题色”栏目（预设色 + 自选色板）：覆盖 ui-theme 基础色板中的 deepseek 蓝家族，默认与原色板逐字节一致。",
+  "icon": "./icon.svg",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "duwo.md",
+    "preview.png",
+    "icon.svg",
+    "tools",
+    "locale/*.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

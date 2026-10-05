@@ -1,0 +1,6 @@
+# Insert the theme-color bundle into the profile's Loader tree.
+# The Host half is an inert row (it exists so client-modules can discover the
+# package manifest); the browser half (./client) injects the palette overrides.
+- insert:
+    - id: theme-color
+      name: 'dsh-the-color'
